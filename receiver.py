@@ -12,6 +12,7 @@ conn, addr = server_socket.accept()
 
 with open(file_name, "wb") as f:
     while True:
+
         data = conn.recv(1024) # Empfange Daten in 1KB Häppchen
         if not data:
             break
