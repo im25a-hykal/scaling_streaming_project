@@ -13,7 +13,7 @@ with open(sending_file, 'rb') as f:
         while data:
             client_socket.send(data)
             data = f.read(1024)
-        if keyboard.is_pressed('esc'):
+        if not data:
             break
 
 client_socket.close()
