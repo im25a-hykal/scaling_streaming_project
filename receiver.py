@@ -1,8 +1,7 @@
 import socket
-import keyboard
 print('test')
 host = '0.0.0.0'
-port = 6769
+port = 8080
 file_name = "temporary.txt"
 
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
